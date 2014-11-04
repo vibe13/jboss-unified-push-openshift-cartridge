@@ -1,7 +1,7 @@
 ---
 snapshot_exclusions:
-- ~/jboss-unified-push/versions
-- ~/jboss-unified-push/modules
+- ~/unified-push/versions
+- ~/unified-push/modules
 locked_files:
 - bin/
 - bin/*
