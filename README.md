@@ -68,12 +68,12 @@ markers/                                         See the Markers section [2]
 The `unified-push` cartridge provides several environment variables to reference for ease
 of use:
 ```
-OPENSHIFT_JBOSS_UNIFIED_PUSH_IP                         The IP address used to bind JBossEAP
-OPENSHIFT_JBOSS_UNIFIED_PUSH_HTTP_PORT                  The JBossEAP listening port
-OPENSHIFT_JBOSS_UNIFIED_PUSH_CLUSTER_PORT               
-OPENSHIFT_JBOSS_UNIFIED_PUSH_MESSAGING_PORT             
-OPENSHIFT_JBOSS_UNIFIED_PUSH_MESSAGING_THROUGHPUT_PORT  
-OPENSHIFT_JBOSS_UNIFIED_PUSH_REMOTING_PORT              
+OPENSHIFT_UNIFIED_PUSH_IP                         The IP address used to bind JBossEAP
+OPENSHIFT_UNIFIED_PUSH_HTTP_PORT                  The JBossEAP listening port
+OPENSHIFT_UNIFIED_PUSH_CLUSTER_PORT               
+OPENSHIFT_UNIFIED_PUSH_MESSAGING_PORT             
+OPENSHIFT_UNIFIED_PUSH_MESSAGING_THROUGHPUT_PORT  
+OPENSHIFT_UNIFIED_PUSH_REMOTING_PORT              
 JAVA_OPTS_EXT                                         Appended to JAVA_OPTS prior to invoking the Java VM
 ```
 For more information about environment variables, consult the
