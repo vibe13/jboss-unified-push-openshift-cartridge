@@ -5,9 +5,9 @@ source $OPENSHIFT_CARTRIDGE_SDK_BASH
 function update-configuration() {
   if marker_present java7 || [ ${1:-undefined} == java7 ]
   then
-    export JAVA_HOME=$OPENSHIFT_JBOSS_UNIFIED_PUSH_JDK7
+    export JAVA_HOME=$OPENSHIFT_UNIFIED_PUSH_JDK7
   else
-    export JAVA_HOME=$OPENSHIFT_JBOSS_UNIFIED_PUSH_JDK6
+    export JAVA_HOME=$OPENSHIFT_UNIFIED_PUSH_JDK6
   fi
 
   echo $JAVA_HOME > $OPENSHIFT_JBOSS_UNIFIED_PUSH_DIR/env/JAVA_HOME
