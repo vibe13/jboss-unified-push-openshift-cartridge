@@ -162,7 +162,7 @@ function threaddump() {
 
 function pre_snapshot {
   start
-  echo "$OPENSHIFT_UNIFIED_PUSH_TOKEN_KEY" > $OPENSHIFT_DATA_DIR/unified_push_token_key
+  # echo "$OPENSHIFT_UNIFIED_PUSH_TOKEN_KEY" > $OPENSHIFT_DATA_DIR/unified_push_token_key
   cp $OPENSHIFT_UNIFIED_PUSH_DIR/standalone/configuration/standalone.xml $OPENSHIFT_DATA_DIR/standalone.snapshot.xml
   stop
 }
@@ -190,7 +190,7 @@ function post_restore {
 }
 
 function cleanup_dump {
-  rm -f $OPENSHIFT_DATA_DIR/unified_push_token_key
+  # rm -f $OPENSHIFT_DATA_DIR/unified_push_token_key
   rm -f $OPENSHIFT_DATA_DIR/standalone.snapshot.xml
 }
 
